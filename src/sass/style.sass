@@ -1,5 +1,448 @@
-@import "../../node_modules/bootstrap/scss/bootstrap/scss"
+@import "../../node_modules/bootstrap/scss/bootstrap.scss"
 @import "./_variables.sass"
-@import "./_fonts"
-@import "./_icons"
+@import "./_fonts.sass"
+@import "./_icones.sass"
 
+
+
+body
+    margin: 0
+    padding: 0
+    font-family: "Poppins"
+    min-height: 200vh
+    
+    // box-sizing: border-box
+    // @media (min-width: 346px) and ( max-width: 645px)
+    //     overflow-x: hidden
+    // @media (min-width: 768px) and ( max-width: 1366px)
+    //     overflow-x: hidden
+    
+
+    header
+        // position: sticky
+        // top: 0
+        // z-index: 1
+        nav
+            
+            .navbar-brand
+                font-size: 60px
+                font-weight: bold
+
+            div
+                ul
+                    form
+                        #blanc
+                            height: 20px
+                            width: 20px
+                            border-radius: 3px
+                            border: 2px solid gray
+                            background-color: white
+                        #noir
+                            height: 20px
+                            width: 20px
+                            border-radius: 3px
+                            border: 2px solid gray
+                            background-color: black
+                        #connexion
+                            border-radius: 0px
+
+    #section1
+
+        background-color: #F3F3F3
+        position: relative
+        #popup
+            margin: 0px  500px
+            align-items: center
+            background:  rgba (0, 0, 0, 0.6)
+        .row
+            
+            .col-lg-7
+                padding: 95px
+                h2
+                    color: #DD4545
+                    font-size: 50px
+                   
+                img
+                    height: 75px
+                   
+                button
+                    background-color: #DD4545
+                    color: white
+                    border: none
+                    border-radius: 50px
+                    padding: 10px 30px
+                    font-size: 10px
+            .col-lg-5
+                img
+                    height: 500px
+                  
+                        
+    #section2
+        .row
+
+            .col-4
+
+                &:nth-child(1)
+                    div
+                        color: white
+                        align-items: center
+                        background-image: url("../../public/img/services/service-1.jpg")
+                        display: flex
+                        justify-content: center
+                        background-position: center
+                        height: 200px
+                        width: 100%
+
+                        h1
+                            border-bottom: solid 2px
+                            padding: 10px 50px
+
+                &:nth-child(2)
+
+                    div
+                        color: white
+                        align-items: center
+                        background-image: url("../../public/img/services/service-2.jpg")
+                        display: flex
+                        justify-content: center
+                        background-position: center
+                        height: 200px
+                        width: 100%
+
+                        h1
+                            border-bottom: solid 2px
+                            padding: 10px 50px
+
+                &:nth-child(3)
+                    div
+                        color: white
+                        align-items: center
+                        background-image: url("../../public/img/services/slider-3.jpg")
+                        display: flex
+                        justify-content: center
+                        background-position: center
+                        height: 200px
+                        width: 100%
+
+                        h1
+                            border-bottom: solid 2px
+                            padding: 10px 50px
+
+    #section3
+        h3
+            font-weight: bold
+        .container
+
+            .row
+                .col-4
+                    .abc
+
+                        position: relative
+                        img
+                            transition: all 3s
+
+                        &:hover
+
+                            &::before
+                                font-family: "Font Awesome 5 Free"
+                                content: "\f06e" " View Details"
+
+                                font-weight: 900
+                                position: absolute
+
+                                height: 0
+                                background-color: black
+                                color: white
+                                display: flex
+                                align-items: center
+                                justify-content: center
+                                opacity: 0.8
+                                bottom: 0
+                                animation: abc 1s
+                                animation-fill-mode: forwards
+                                max-width: 50%
+                            &::after
+                                font-family: "Font Awesome 5 Free"
+                                content: "\f291" " Add to cart"
+
+                                font-weight: 900
+                                position: absolute
+                                display: flex
+                                align-items: center
+                                justify-content: center
+                                height: 0
+                                background-color: red
+                                color: white
+
+                                opacity: 0.8
+                                bottom: 0
+                                animation: abc 1s
+                                animation-fill-mode: forwards
+                                max-width: 50%
+                                left: 50%
+
+                    .nam_price
+                        margin: 30px
+                        text-align: center
+
+                        .nom
+                            font-weight: bold
+                        .prix
+                            color: #e24a4a
+                    .nam_price_sale
+                        margin: 30px
+                        display: flex
+                        justify-content: space-around
+                        align-items: center
+                        text-align: center
+                        .sale
+
+                            span
+                                color: #fff
+                                background-color: #e24a4a
+                                border-radius: 50%
+                                height: 80px
+                                width: 80px
+                                display: flex
+                                align-items: center
+                                justify-content: center
+                        .nom
+                            font-weight: bold
+                        .prix
+                            color: red
+
+    #section4
+
+        height: 600px
+        width: 100%
+        margin: 20px 0px
+        div
+
+            color: white
+            height: 600px
+            width: 100%
+            background-image: url("../../public/img/cta-bg.jpg")
+            justify-content: center
+            align-items: center
+            background-position: center
+            button
+                padding: 10px 20px
+                background-color: #e24a4a
+                border: none
+                color: white
+                border-radius: 5px
+
+    #section5
+        // background-position: center
+        // align-items: center
+        // justify-content: center
+        display: flex
+
+        // height: 400px
+        // width: 800px
+        margin: 0px 250px
+
+        .thumbnail-slider
+
+            width: 100%
+            float: left
+            overflow: hidden
+            .thumbnail-container
+                width: 100%
+                float: left
+                transition: margin 2s ease
+
+                .item
+
+                    height: 250px
+                    width: 50px
+                    float: left
+                    img
+                        width: 100%
+                        height: 100%
+                    .nam_price
+                        margin: 30px
+                        text-align: center
+
+                    .nom
+                        font-weight: bold
+                    .prix
+                        color: #e24a4a
+                    .nam_price_sale
+                        margin: 30px
+                        display: flex
+                        justify-content: space-around
+                        align-items: center
+                        text-align: center
+                    .sale
+
+                        span
+                            color: #fff
+                            background-color: #e24a4a
+                            border-radius: 50%
+                            height: 80px
+                            width: 80px
+                            display: flex
+                            align-items: center
+                            justify-content: center
+                    .nom
+                        font-weight: bold
+                    .prix
+                        color: red
+
+            .controls
+
+                width: 100%
+                float: left
+                padding-top: 100px
+                ul
+
+                    display: block
+                    text-align: center
+                    padding: 0
+                    margin: 0
+                    list-style: none
+                    li
+                        color: #fff
+                        border-radius: 50%
+                        height: 20px
+                        width: 20px
+                        border: 1px solid#616161
+                        margin: 4px
+                        display: inline-block
+                        // line-height: 33px
+                        // cursor: pointer
+
+    #section6
+        margin: 30px 20px
+        .row
+            .col-4
+
+                &:first-of-type
+
+                    div
+
+                        display: flex
+                        justify-content: center
+                        align-items: center
+                        text-align: center
+                        height: 400px
+                        width: 100%
+                        background-color: #f3f3f3
+                        h6
+                            padding: 50px 0px
+                        button
+                            padding: 10px
+                            color: #fff
+                            border: none
+                            border-radius: 10px
+                            background-color: #504b4b
+                        p
+                            padding: 10px
+                            color: #504b4b
+
+                &:nth-of-type(2)
+
+                    div
+                        color: #fff
+                        justify-content: center
+                        align-items: center
+                        text-align: center
+                        height: 400px
+                        width: 100%
+                        background-color: #e24a4a
+                        h6
+                            padding: 50px 0px
+                        button
+                            padding: 10px
+                            color: black
+                            border: none
+                            border-radius: 10px
+                            background-color: #fff
+                        p
+                            padding: 10px
+                            color: #fff
+
+                &:nth-of-type(3)
+
+                    div
+
+                        justify-content: center
+                        align-items: center
+                        text-align: center
+                        height: 400px
+                        width: 100%
+                        background-color: #f3f3f3
+                        h6
+                            padding: 50px 0px
+                        button
+                            padding: 10px
+                            color: #fff
+                            border: none
+                            border-radius: 10px
+                            background-color: #504b4b
+                        p
+                            padding: 10px
+                            color: #504b4b
+    footer
+        background-color: #504b4b
+        h5
+            color: #ffff
+            padding: 10px
+        p
+            color: #807e7e
+        li
+            list-style: none
+            color: #fff
+        button
+            border-radius: 10px
+            color: #807e7e
+            background: none
+            border: solid #807e7e  0.5px
+
+        .row
+            margin-top: 0px
+            display: flex
+            justify-content: center
+            align-items: center
+            padding: 50px
+
+        .copy
+            width: 100%
+            height: auto
+            background-color: black
+            h2
+                text-align: center
+                padding: 10px
+
+    @keyframes abc
+        0%
+            width: 100%
+            height: 0%
+        100%
+            width: 100%
+            height: 30%
+
+    @media only screen and (max-width: 750px)
+        header
+            padding: 0px
+            #logo
+                h1
+                    display: none
+
+        #section1
+            .row
+                padding: 0px
+                .col-7
+                    text-align: center
+                .col-5
+                    img
+                        width: 100%
+
+        #section5
+
+            margin: 0px 0px
+        #section4
+            div
+                h1
+                    text-align: center

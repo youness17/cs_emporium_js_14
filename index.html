@@ -1,13 +1,548 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./public/css/style.css">
     <title>Document</title>
 </head>
+
 <body>
+
+
+    <!-- nav bar -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light d-flex flex-column">
+
+            <a class="navbar-brand my-3" href="#" id="main-title">emporium.</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                <ul class="navbar-nav">
+
+
+                    <h1 class="mr-5 d-none" id="empo">emporium.</h1>
+                    <li class="nav-item">
+                        <a class="nav-link m-4 text-secondary" href="#">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link m-4 text-secondary" href="#">PRODUCT</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link m-4 text-secondary" href="#">BLOG</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link m-4 text-secondary" href="#">ELEMENTS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link m-4 text-secondary" href="#">ABOUT</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link m-4 text-secondary" href="#">CONTACT</a>
+                    </li>
+
+                    <form class="form-inline my-2 my-lg-0">
+                        <button id="blanc" class="m-1"></button>
+                        <button id="noir" class="m-1"></button>
+                        <button class="btn btn-outline-light my-2 my-sm-0 bg-secondary" id="connexion"
+                            type="submit">CONNEXION</button>
+                    </form>
+
+                </ul>
+            </div>
+           
+        </nav>
+        
+    </header>
+    <!-- fin header -->
+
+    <!-- debut section 1  -->
+    <section class="container-fluid" id="section1">
+        <div class="bg-white text-center d-none" id="popup">
+            <div class="row">
+                
+                <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 pt-4">
+                    <div id="exit"><a href=""><i class="far fa-times-circle"></i></a></div>
+                    <div><h1><a href="" class="text-dark" id="sign-up">SIGN UP</a></h1></div>
+                    
+                    <hr>
+                    <form class="" id="formulaire">
+                        <div class="form-group text-left ml-3">
+                            <input type="email" placeholder="Email Adress" class="mb-3 w-75">
+                            
+                            <input type="password" placeholder="Password" class="mb-3 w-75">
+                            <div class="text-left "><button class="btn btn-info px-5">Sign up</button></div>
+                        </div>
+                        <div class="d-flex flex-column">
+                            <div class="mb-2">
+                                <button class="btn btn-danger w-75"><i class="fab fa-google"> Connect with Google</i></button>
+                            </div>
+                            <div>
+                                <button class="btn btn-primary w-75"><i class="fab fa-facebook-f"></i> Connect with facebook</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                
+                
+                <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 mt-5">
+ 
+                    <h1 class="text-uppercase text-center">
+                        <a href="" class="text-dark " id="register">Register</a> 
+                    </h1>
+                    <hr>
+                    <div id="maman" class="p-3 d-none">
+                        
+                        
+                        <div class="d-flex mb-3">
+                            <input type="text" placeholder="First Name" class="w-50 mr-3"><input type="text" placeholder="Last Name" class="w-50">
+                        </div>
+                        <input type="email" placeholder="Email Address" class="w-100 mb-4">
+                        <div class="d-flex">
+                            <input type="password" placeholder="Password" class="w-50 mr-4"><input type="password"  placeholder="Confirm Password" class="w-50">
+                        </div>
+                        <div class="d-flex justify-content-start">
     
+                            <button class="btn btn-info mt-3 w-50">Register</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-sm-12 col-md-6 col-lg-7 col-xl-7">
+                <h2>Shop at</h2>
+                <h1>emporium</h1>
+                <p class="text-secondary">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam minus
+                    ullam, laboriosam blanditiis
+                    eos culpa. Unde, consequatur esse. Modi, ex aut!</p>
+                <button class="text-uppercase">
+                    sale items
+                </button>
+            </div>
+            <div class="col-12 col-sm-12 col-md-6 col-lg-5 col-xl-5">
+
+                <img src="./public/img/slider-1.jpg" alt="" class="img-fluid">
+
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- /fin/section -->
+    <!--  -->
+    <!--  -->
+    <!--  -->
+    <!-- section2 -->
+
+    <section id="section2" class=" mt-5">
+        <div class="container-fluid">
+
+            <div class="row ">
+
+
+                <div class="col-4 col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 mt-2">
+                    <div>
+                        <h1>sale items</h1>
+                    </div>
+                </div>
+                <div class="col-4 col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 mt-2">
+                    <div>
+                        <h1>Living Room</h1>
+                    </div>
+                </div>
+                <div class="col-4 col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 mt-2">
+                    <div>
+                        <h1>Colothes</h1>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+        </div>
+
+    </section>
+
+    <!-- fin section 2 -->
+    <!--  -->
+    <!--  -->
+    <!--  -->
+
+    <!-- section3 -->
+
+    <section id="section3">
+        <h3 class="text-center m-5">Recents products</h3>
+        <div class="container">
+
+            <div class="row">
+
+                <div class="col-4 col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">
+                    <div class="abc">
+                        <img class="test img-fluid" src="./public/img/products_mini/product-bag.jpg" alt="">
+                    </div>
+                    <div class="nam_price">
+                        <p class="nom">Luxury</p>
+
+                        <span class="prix">600</span>
+
+                    </div>
+                </div>
+                <div class="col-4 col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">
+                    <div>
+                        <div class="abc">
+                            <img class="img-fluid" src="./public/img/products_mini/product-bed.jpg" alt="">
+                        </div>
+                    </div>
+
+                    <div class="nam_price_sale">
+                        <div class="sale">
+                            <span>SAlE!</span>
+                        </div>
+                        <div class="nam_price">
+                            <p class="nom">Luxury</p>
+
+                            <span class="prix">test</span>
+
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4 col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">
+                    <div>
+                        <div class="abc">
+                            <img class="img-fluid" src="./public/img/products_mini/product-cups.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="nam_price">
+                        <p class="nom">Luxury</p>
+
+                        <span class="prix">test</span>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-4 col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">
+                    <div>
+                        <div class="abc">
+                            <img class="img-fluid" src="./public/img/products_mini/product-gloves.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="nam_price_sale">
+                        <div class="sale">
+                            <span>SAlE!</span>
+                        </div>
+                        <div>
+                            <p class="nom">Luxury</p>
+
+                            <span class="prix">test</span>
+
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4 col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">
+                    <div>
+                        <div class="abc">
+                            <img class="img-fluid" src="./public/img/products_mini/product-luxry-sofa.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="nam_price">
+                        <p class="nom">Luxury</p>
+
+                        <span class="prix">test</span>
+
+                    </div>
+                </div>
+                <div class="col-4 col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">
+                    <div>
+                        <div class="abc">
+                            <img class="img-fluid" src="./public/img/products_mini/product-modern-sofa.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="nam_price">
+                        <p class="nom">Luxury</p>
+
+                        <span class="prix">test</span>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-4 col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">
+                    <div>
+                        <div class="abc">
+                            <img class="img-fluid" src="./public/img/products_mini/product-plates.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="nam_price">
+                        <p class="nom">Luxury</p>
+
+                        <span class="prix">test</span>
+
+                    </div>
+                </div>
+                <div class="col-4 col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">
+                    <div>
+                        <div class="abc">
+                            <img class="img-fluid" src="./public/img/products_mini/product-shoes.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="nam_price">
+                        <p class="nom">Luxury</p>
+
+                        <span class="prix">test</span>
+
+                    </div>
+                </div>
+                <div class="col-4 col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">
+                    <div>
+                        <div class="abc">
+                            <img class="img-fluid" src="./public/img/products_mini/product-tshitr.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="nam_price">
+                        <p class="nom">Luxury</p>
+
+                        <span class="prix">test</span>
+
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+
+
+    </section>
+    <!-- fin section3 -->
+    <!--  -->
+    <!--  -->
+    <!-- section4 -->
+    <section id="section4">
+        <div class="d-flex flex-column">
+            <h1>discover thousands Of Great Products</h1>
+            <button>LEARN MORE</button>
+
+        </div>
+
+
+
+    </section>
+    <!-- fin section4 -->
+    <!--  -->
+    <!--  -->
+    <!-- section5 -->
+
+    <section id="section5">
+
+        <div class="thumbnail-slider">
+            <div class="thumbnail-container">
+                <div class="item">
+
+                    <img class="img-fluid" src="./public/img/products_mini/product-bag.jpg" alt="">
+
+                    <div class="nam_price">
+                        <p class="nom">Luxury</p>
+
+                        <span class="prix">600</span>
+
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="./public/img/products_mini/product-bed.jpg" alt="">
+                    <div class="nam_price_sale">
+                        <div class="sale">
+                            <span>SAlE!</span>
+                        </div>
+                        <div>
+                            <p class="nom">Luxury</p>
+
+                            <span class="prix">test</span>
+
+
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="./public/img/products_mini/product-cups.jpg" alt="">
+                    <div class="nam_price">
+                        <p class="nom">Luxury</p>
+
+                        <span class="prix">test</span>
+
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="./public/img/products_mini/product-gloves.jpg" alt="">
+                    <div class="nam_price_sale">
+                        <div class="sale">
+                            <span>SAlE!</span>
+                        </div>
+                        <div>
+                            <p class="nom">Luxury</p>
+
+                            <span class="prix">test</span>
+
+
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="./public/img/products_mini/product-luxry-sofa.jpg" alt="">
+                    <div class="nam_price">
+                        <p class="nom">Luxury</p>
+
+                        <span class="prix">test</span>
+
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="./public/img/products_mini/product-modern-sofa.jpg" alt="">
+                    <div class="nam_price">
+                        <p class="nom">Luxury</p>
+
+                        <span class="prix">test</span>
+
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="./public/img/products_mini/product-plates.jpg" alt="">
+                    <div class="nam_price">
+                        <p class="nom">Luxury</p>
+
+                        <span class="prix">test</span>
+
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="./public/img/products_mini/product-shoes.jpg" alt="">
+                    <div class="nam_price">
+                        <p class="nom">Luxury</p>
+
+                        <span class="prix">test</span>
+
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="./public/img/products_mini/product-tshitr.jpg" alt="">
+                    <div class="nam_price">
+                        <p class="nom">Luxury</p>
+
+                        <span class="prix">test</span>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- controls slides -->
+            <div class="controls ">
+            </div>
+
+        </div>
+    </section>
+
+
+
+    <!-- fin section5 -->
+    <!--  -->
+    <!--  -->
+    <!-- section6 -->
+    <section id="section6">
+        <div class="row">
+            <div class="col-4 col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">
+                <div class="d-flex flex-column">
+                    <i class="far fa-check-circle"></i>
+                    <h6>TRSUTED DY 10000+ CUSTOMRS</h6>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum quaerat dolor debitis enim
+                        perferendis in.</p>
+                    <button>LEARN MORE</button>
+                </div>
+
+            </div>
+            <div class="col-4 col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">
+                <div class="d-flex flex-column">
+                    <i class="fas fa-paper-plane"></i>
+                    <h6>TRSUTED DY 10000+ CUSTOMRS</h6>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum quaerat dolor debitis enim
+                        perferendis in.</p>
+                    <button>LEARN MORE</button>
+                </div>
+
+            </div>
+            <div class="col-4 col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">
+                <div class="d-flex flex-column">
+                    <i class="far fa-check-circle"></i>
+                    <h6>TRSUTED DY 10000+ CUSTOMRS</h6>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum quaerat dolor debitis enim
+                        perferendis in.</p>
+                    <button>LEARN MORE</button>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+
+
+
+
+    <!-- fin section6 -->
+    <!--  -->
+    <!--  -->
+    <!-- footer -->
+    <footer>
+        <div class="row">
+            <div class="col-3 col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3">
+                <h5>ABOUT US</h5>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa officiis aspernatur atque, ratione ab
+                    cum tempora consectetur pariatur soluta, delectus minus eligendi earum ipsum maiores.</p>
+            </div>
+            <div class="col-3 col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3">
+                <h5>RECENTS POSTS</h5>
+
+                <li>> Hello World</li>
+                <li>> Hello World</li>
+                <li>> Hello World</li>
+                <li>> Hello World</li>
+
+            </div>
+            <div class="col-3 col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3">
+                <h5>TAG CLOUD</h5>
+                <div class="p-1">
+                    <button>Hello</button>
+                    <button>Hello</button>
+                    <button>Hello</button>
+                </div>
+                <div class="p-1">
+                    <button>Hello</button>
+                    <button>Hello</button>
+                    <button>Hello</button>
+                </div>
+                <div class="p-1">
+                    <button>Hello</button>
+                </div>
+            </div>
+        </div>
+        <div class="copy">
+            <h2>copyright 2020 goodlayers.</h2>
+
+        </div>
+
+    </footer>
+
 
 
 
@@ -16,5 +551,17 @@
 
 
     <script src="./public/js/main.js"></script>
+
+    <!-- JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>

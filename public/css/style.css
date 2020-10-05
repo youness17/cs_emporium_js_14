@@ -16021,9 +16021,15 @@ body {
   font-family: "Poppins";
   min-height: 200vh;
 }
+body header nav {
+  justify-content: center;
+}
 body header nav .navbar-brand {
   font-size: 60px;
   font-weight: bold;
+}
+body header nav div {
+  justify-content: center;
 }
 body header nav div ul form #blanc {
   height: 20px;

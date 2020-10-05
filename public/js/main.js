@@ -45,8 +45,9 @@ blanc.addEventListener("click", (e) => {
 
 let header = document.querySelector("header")
 let navbar = document.querySelector("nav")
-let empo = document.getElementById("empo")
-let maintitle = document.getElementById("main-title")
+let logo_2 = document.querySelector(".logo_2")
+
+let logo_1 = document.querySelector(".logo_1")
 
 
 window.addEventListener("scroll", () => {
@@ -55,13 +56,14 @@ window.addEventListener("scroll", () => {
         header.style.top = 0
         header.style.width = "100%"
         header.style.zIndex = 2
-        empo.setAttribute("class", "d-block pt-4 pr-5")
-        maintitle.style.display = "none"
+        logo_2.setAttribute("class", "d-block pt-4 pr-5")
+        logo_1.style.display = "none"
+        
 
     } else {
         header.style.position = "static"
-        empo.setAttribute("class", "d-none")
-        maintitle.style.display = ""
+        logo_2.setAttribute("class", "d-none")
+        logo_1.style.display = ""
 
     }
 })
@@ -74,9 +76,16 @@ let signup = document.getElementById("sign-up")
 let register = document.getElementById("register")
 let formulaire = document.getElementById("formulaire")
 let maman = document.getElementById("maman")
-console.log(register);
+let row2 = document.getElementById("row2")
 
 connexion.addEventListener("click", (e) => {
+   
+   section2.style.display = "none"
+   section3.style.display = "none"
+   section4.style.display = "none"
+   section5.style.display = "none"
+   section6.style.display = "none"
+   row2.style.display = "none"
     e.preventDefault()
     popup.setAttribute("class", "bg-white text-center")
     let exit = document.getElementById("exit")
